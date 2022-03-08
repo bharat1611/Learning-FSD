@@ -1,0 +1,27 @@
+h1{
+    color:red;
+}
+.subtitle
+{
+    color : blue;
+}
+/* PSEUDO SELECTORs */
+h2:hover{
+    color : red;
+
+}
+li:first-child
+{
+    color:yellow;
+}
+
+.un-order:first-child{
+    color:red;
+}
+.un-order:last-child{
+    color:blue;
+}
+.un-order:nth-child(2)
+{
+    color:grey;
+}

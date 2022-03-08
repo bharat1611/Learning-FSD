@@ -1,0 +1,243 @@
+<!DOCTYPE html> 
+<!-- Doctype html is used to tell the compiler that it is a html5 document -->
+<html>
+    <!-- commenting -->
+        
+        <!-- I am trying to type using fingertyping -->
+    <head>
+        <!-- head contains information about the document -->
+        <!-- This section contains the meta - data related to the whole dcoument -->
+        <!-- generally contains the title or href,file linking in the document  -->
+    </head>
+
+    </head>
+    <body> 
+        <h3>Block Elements and Inline Elements</h3>
+            In block, whatever you write(content) is presented in a complete new line. If you write before or after this block, it comes in a new line.<br>
+            In inline element, no new block or line is associated with the content.<hr>
+    
+        <h2>COMMON HTML TAGS</h2>
+            <h3><!-- --></h3>
+                They are used to write headings in HTML
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                And so on.<hr>
+
+        <h3>Paragraphs </h3>
+            <p> // content// Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit esse optio rerum culpa aperiam reprehenderit quia pariatur excepturi deleniti reiciendis. Ipsam, vel sed. Pariatur doloremque, quibusdam odit quas voluptas itaque.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos quas facere blanditiis recusandae, dolores voluptatem laboriosam, numquam nam quos pariatur aperiam dolore debitis! Fuga ipsam aliquam tempora dolore dolorem.</p><hr>
+
+
+        <h3>Bold element - Inline Element</h3>
+            This is an inline element. It is used to bold the content written in it. Use it as <b>Bold</b><br><hr>
+        <h3>Italic Element - Inline Element</h3>
+            Use <i>Italic</i><hr/>
+        <h3>Span - Inline Element - will use in CSS </h3>
+            Use as <span style="color: red;">Blah1</span><br><hr>
+        <h3>Underline - Inline Element </h3>
+            Use as <u>Underline</u><hr>
+
+        <h3>Links and Images</h3>
+            <b><u>LINKS : </u></b><br>
+            There are 3 types of links : <br>
+            <ol>
+                <li><u><b>Absolute Link : </b></u>When I want to take a user to a 3rd Party website.<b>Eg.</b> taking the user to google.
+                <!-- here <a> is an anchor element and what we write after it is attribute. Attribute gives more information about the element. Target is used to open the website in a new window-->
+           
+           
+                <a href="https://www.google.com" target="blank">Click here to go to google</a><br></li>
+                <li><u><b>Relative Link : </b></u> Opens a different section of the website. 
+                <a href="/index.html" target="_blank">Click here to go to index page</a><br></li>
+                <li><u><b>Root relative Link : </b></u> This is the link to go back to the homepage from where you came from.</li>
+            </ol>
+            <hr>
+            <b><u>IMAGES : </u></b><br>
+            There are 4 types of main images:
+            <ul>
+                <li>.png image</li>
+                <img src="/Images/09(png).png" alt="An example of png image" width="640" height="400"/>
+                <li>.jpg/jpeg image</li>
+                <img src="/Images/01(jpg).jpg" alt="An example of jpg image"width="640" height="400"/>
+                <li>.svg image</li>
+                <img src="/Images/09(png).png" alt="An example of svg image"width="640" height="400"/>
+                <li>.gif's</li>
+                <img src="/Images/04(gif).gif" alt="An example of gif image"width="640" height="400"/>
+                <div style="height:10px"></div>
+            </ul>
+            <b><u>IMAGES USING ABSOLUTE LINK :</u></b><br>
+                This image is here using an absolute link. (I don't have it downloaded)<br>
+                <img src="https://techbeacon.com/sites/default/files/styles/social/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=R3pMKIzh" alt="Example of image via absolute link" width="640" height="400"><br>
+            <b>But what if I write after this </b>
+            
+            <hr>
+        <h3><u>LISTS : </u></h3><br>
+            <B><u>Ordered List : </u></B><br>
+                <ol type="a">
+                    <li>Lets make step 1 of the list</li>                    <li>Then this is the 2nd step</li>
+                    <li>Then here is step 3</li>
+                </ol>Another try
+                <ol type="i">
+                    <li>Lets make step 1 of the list</li>
+                    <li>Then this is the 2nd step</li>                    <li>Then here is step 3</li>
+                </ol>
+                <B><u>Unordered List : </u></B><br>
+                <ul>
+                    <li>This is the first element of the list</li>
+                    <li>This is the 2nd element</li>
+                    <li>This is the 3rd</li>
+                </ul>
+                <hr>  
+                
+                
+        <h3><u>HTML Forms :</u></h3>
+        <!-- A user form for general information -->
+        <form action="#">
+            <!-- Action here contains the absolute link of the backend -->
+            <div>
+                <label>First Name : </label>
+                <input type="text"/>
+            </div>
+            <br>
+            <div>
+                <label>Last Name : </label>
+                <input type="text"></input>
+            </div>
+            <br>
+            <div>
+                <label>Mobile Number : </label>
+                <input type="number">
+            </div>
+            <br>
+            <div>
+                <label>E-Mail : </label>
+                <input type="email"/>
+                <!-- we need to check whether we write a valid email or not coz text can enter anything, we wont be able to determine if the email is valid or not -->
+            </div>
+            <br>
+            <div>
+                <label>Password : </label>
+                <input type="password"/>
+            </div>
+            <br>
+            <div>
+                <label>Feedback : </label>
+                <textarea cols="25" rows="5"></textarea>
+            </div>
+            <br>
+            <div><input type="range"><br></div>
+            <div>
+                <label>Input Date : </label>
+                <input type="date"><br><br></div>
+            <div>
+                <label>File : </label>
+                <input type="file"/>
+            </div>
+            <br>
+
+            <input type ="Button" value="Sign-Up">
+            <!-- This next submit button takes the information of the form to the link mentioned in the <form action> link -->
+
+            <input type="submit" value="SUBMIT">
+        </form> <br>
+        <hr>
+        
+        <h3><u>Tables : </u></h3>
+        <table>
+            <!-- thead contains all the headings, like employee name, employee age, employee salary and stuff. And tbody contains all the entries in the table-->
+
+            <!-- <thead> basically sets the columns and we enter the rows in <tbody> -->
+            <thead>
+                <th>Emp. Name</th>
+                <th>Emp. Email</th>
+                
+                <th>Emp. Age</th>
+                <th>Emp. Description</th>
+            </thead>
+            
+            
+            <tbody>
+                <tr>
+                    <td>Name 1</td>
+                    <td>name1@google.com</td>
+                    <td>50</td>
+                    <td>CEO</td>
+                </tr>
+
+                <tr>
+                    <td>Name 2</td>
+                    <td>name2@something.com</td>
+                    <td>64</td>
+                    <td>President</td>
+                </tr>
+                
+                <tr>
+                    <td>Name 3</td>
+                    <td>name3@halway.com</td>
+                    <td>30</td>
+                    <td>Something</td>
+                </tr>
+
+                <tr>
+                    <td>Name 4</td>
+                    <td>name4@apple.com</td>
+                    <td>40</td>
+                    <td>pos 4</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <hr>
+        <h3><u>Integrate Videos : </u></h3>
+            <h4><u>Integrate a video from your device : </u></h4>
+            <video src="Videos/B.o.B - Airplanes ft. Hayley Williams of Paramore [OFFICIAL VIDEO].mp4" controls poster="https://live.staticflickr.com/5514/9259349742_0c5713af6f_b.jpg" width="560" height="315"></video>
+            <br>
+
+            <h4><u>Integrate a youtube video : </u></h4>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/prmQgSpV3fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        <h1>HTML 5 Semantics</h1>
+            We have separate tags for different places and elements, i.e. where we want to display our header, menu,footer. Separate tags for separate places.
+            <header>
+                This is the header <hr>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Section 1</a></li>
+                    <li><a href="#">Section 2</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </header>
+            <h3>We can also use sections footer, and other things.</h3>
+            <main>
+
+            
+            <section>
+                <articles>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, sint. Labore dolores numquam atque nemo perferendis rem illo obcaecati quibusdam accusamus vel eos modi, ut, animi officiis veniam quis soluta!
+                </articles><br>
+            </section>
+
+            <section>
+                <article>
+                    <details>
+                        <summary>This is a summary of LOREM</summary>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, sint. Labore dolores numquam atque nemo perferendis rem illo obcaecati quibusdam accusamus vel eos modi, ut, animi officiis veniam quis soluta!
+                    
+                    </details> 
+                </article><br>
+        </section>
+
+
+        </main>
+        <footer>
+            <hr>
+            &copy;2021, All rights reserved
+        </footer>
+        <div style="height:500px"></div>
+    </body>
+</html>
