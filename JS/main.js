@@ -62,55 +62,55 @@
 // console.log(course);
 
 //Objects in JS - { key : value }
-const user = {
-    firstName: "Bharat",
-    lastName: "Upadhyay",
-    age: "21",
+// const user = {
+//     firstName: "Bharat",
+//     lastName: "Upadhyay",
+//     age: "21",
 
-    //Include arrays inside object
-    hobbies: ['art', 'roaming', 'adventure'],
+//     //Include arrays inside object
+//     hobbies: ['art', 'roaming', 'adventure'],
 
-    //Inlcude objects inside object
-    address: {
-        street: "A-16",
-        locality: "KhurramNagar",
-        city:"Lucknow"
-    }
-}
+//     //Inlcude objects inside object
+//     address: {
+//         street: "A-16",
+//         locality: "KhurramNagar",
+//         city:"Lucknow"
+//     }
+// }
 
-console.log(user);
+// console.log(user);
 
-//Access values from the object
-console.log (`Hi my name is ${user.firstName} ${user.lastName}. My hobbies are ${user.hobbies[0]} and ${user.hobbies[2]}. I live in ${user.address.street} ${user.address.locality}, ${user.address.city}`)
+// //Access values from the object
+// console.log (`Hi my name is ${user.firstName} ${user.lastName}. My hobbies are ${user.hobbies[0]} and ${user.hobbies[2]}. I live in ${user.address.street} ${user.address.locality}, ${user.address.city}`)
 
-//Array of Objects => [{}, {}, {}]
+// //Array of Objects => [{}, {}, {}]
 
-//Conditions
-if(5 < 10)
-    console.log('5 is less than 10')
-else
-    console.log('5 is greater than 10')
+// //Conditions
+// if(5 < 10)
+//     console.log('5 is less than 10')
+// else
+//     console.log('5 is greater than 10')
 
-// Shorthand - condition ? true : false
-5 < 10 ? console.log("5 is less than 10") : console.log('5 is greater than 10')
+// // Shorthand - condition ? true : false
+// 5 < 10 ? console.log("5 is less than 10") : console.log('5 is greater than 10')
 
-const ans= 10 / 0;
-console.log(ans)
+// const ans= 10 / 0;
+// console.log(ans)
 
-const ans1 = 20 / "blah"
-console.log(ans1)
+// const ans1 = 20 / "blah"
+// console.log(ans1)
 
-const ans2 = 'yo'/'blah'
-console.log(ans2)
+// const ans2 = 'yo'/'blah'
+// console.log(ans2)
 
-// JSON - JS Object Notation
-// stringify()
-const jsonData = JSON.stringify(user)
-console.log(jsonData)
+// // JSON - JS Object Notation
+// // stringify()
+// const jsonData = JSON.stringify(user)
+// console.log(jsonData)
 
-// parse{} - Convert JSON into ArrayOfObjects
-const arrayOfObjects = JSON.parse(jsonData)
-console.log(arrayOfObjects);
+// // parse{} - Convert JSON into ArrayOfObjects
+// const arrayOfObjects = JSON.parse(jsonData)
+// console.log(arrayOfObjects);
 
 // var, let and const
 // age>30 - half the age : double the age
@@ -119,30 +119,86 @@ console.log(arrayOfObjects);
 // var - global scope
 
 
-const age = 30;
-if(age > 30){
-   let newAge=age/2;
-    console.log(newAge)
-}
-else{
-    let newAge = age * 2;
-    console.log(newAge);
-}
+// const age = 30;
+// if(age > 30){
+//    let newAge=age/2;
+//     console.log(newAge)
+// }
+// else{
+//     let newAge = age * 2;
+//     console.log(newAge);
+// }
 
 // console.log(newAge)  - error coz not accessbile outside
 
 // LOOPS 
 // 1. Basic Loops - for() and while()
 
-for(let i = 1; i<=10 ; i++)
-    console.log("Value is ", i);
+// for(let i = 1; i<=10 ; i++)
+//     console.log("Value is ", i);
 
 
 
 // 5 ki table
 
-for(let i=1;i<=10;i++)
-    console.log(" 5 * ", i, " = ", 5*i)
+// for(let i=1;i<=10;i++)
+//     console.log(" 5 * ", i, " = ", 5*i)
+
+// Array of objects
+
+const todo=[
+    {
+        id : 1,
+        task : " Meeting with the team ",
+        isCompleted : true
+    },
+    {
+        id : 2,
+        task : " Take out ",
+        isCompleted : false
+    },
+    {
+        id : 3,
+        task : " Take my dog out for a walk " ,
+        isCompleted : true
+    }
+]
+console.log(todo.length);
+
+// Agenda - 
+for(let i= 0; i<todo.length; i++)
+    console.log(todo[i].task);
+
+// Or we can se for of : 
+for(let to of todo)
+    console.log(to.task);
+
+for(let to of todo){
+    to.isCompleted === true ? console.log(to.task) : '';
+}
+
+// Functions
+// Re-usable block of code that we can use anywhere in the code
+
+// 1. Traditional Way
+// 2. ES6 - new and more popular
+
+// 1. funtion <func.name>(parameters) { .... body }
+
+function greet(name){
+    console.log(`Good Evening ${name}`);
+}
+
+function add(a,b)
+{
+    return (a+b)
+}
+// Calling
+greet('Bharat')
+greet("Blah")
+const result = add(3,4)
+console.log(`The result is ${result}`);
+
 
 
 
