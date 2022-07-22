@@ -6,8 +6,11 @@ function App() {
     <div className="App">
         <h1>Welcome to React</h1>
         <Header title = "This is using props"/>
-        <Header/>
+        {/* <Header title = {100}/> */}
+        <Header title = "Actual Heading"/>
+        
         <Title/>
+
 
     </div>
   );
