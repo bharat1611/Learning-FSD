@@ -205,3 +205,14 @@ console.log(`The result is ${result}`);
 
 
 
+{/* <input id="input" type="textarea">
+<button id="button" onclick="return add()">ADD</button>
+<script>
+    function add() {
+        var button = document.getElementById("input").value;
+        if (button == null || button == ""){
+        return false;
+    }
+        document.getElementById("button").innerHTML = button;
+    }
+</script> */}
